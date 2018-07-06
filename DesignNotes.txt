@@ -1,0 +1,65 @@
+Zane Reeder
+Database Design
+Modeling and Design
+7/5/2018
+
+
+What is Database Design
+	Definition
+		Process of producting detailed data model of databse.
+		Fully attributed data model contains detailed attrubutes
+		for each entity
+		
+		Describe many different parts of the design of an overall
+		database system. The logical design of the base data
+		structures used to store the data. In the relational model
+		these are the tables.
+	
+	Objectives
+		supports required and ad hoc(unplanned) information retrieval
+		tables constructed properly and efficiently
+		data integrity is imposed at field, table, and relationship
+			levels
+		support business rules relevant to the org it is designed
+		lend itself to future growth and development
+		
+	Benefits
+		databse structure is easy to modify and maintain
+		data is easy to modify
+		information is easy to retrieve
+		end-user applications are easy to develop and build.
+		
+	Process
+		Art over Science
+		Steps
+			1 Determine Purpose
+			2 Find and Organize information required
+			3 Divide the information into tables
+			4 Turn information items into columns
+			5 Specify Primary Keys
+			6 Set up table relationships
+			7 Apply the normalization rules
+			8 Refine the Design
+	
+Three Levels of Database Design
+	1 Conceptual
+	2 Logical
+	3 Physical
+	
+	1 & 2 are called datamodeling
+		Abstract design phase
+			Entities and Constraints
+	
+	3 defines datamodel of specific management system
+		storage strcuture, file org, and/or indexing
+
+		
+Database Design Tools
+	Paid with freemium versions
+	
+	Reverse Engineering and Foward Engineering
+		MySQL Workbench
+		Erwin - Paid
+	
+	
+		

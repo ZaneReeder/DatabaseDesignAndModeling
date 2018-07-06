@@ -1,0 +1,89 @@
+Zane Reeder
+Database Design
+Databse Basics
+7/5/2018
+
+What is a Database
+	Ancient Mesopotamia
+	Tax Data Collection
+	Egypt and Rome
+	Registries
+		Many elements of each citizen
+	Catholic Church Registries
+	Large Early 20th Century Companies
+	Computer Age
+		papers -> drives -> files
+	
+	Official Definition
+		A database is an organized collection of Data.
+		It is the collection of schemas, tables, queries,
+		reports views and other objects. The data is typically
+		organized to model aspects of reality in a way that
+		supports processes requiring informtaion, such as modelling
+		the availability of rooms in hotels in a way that supports
+		finding a hotel with vacancies.
+	
+
+How Databases Work and Why They Are Important?
+
+	Time Complexity
+		Constant
+		Linear
+		Quadratic
+		Logorithmic Time
+		
+		Binary Self Balancing Trees
+			allow searching, access, insertion, and deletions
+			in logarithmic time complexity.
+		
+		N = (m-1)**d
+			d=log(N)
+		where m is the order, and d is the depth of the tree.
+		
+		Thus databases index information such that time complexity
+		of CRUD is reduced from O(n) to O(logn)
+		Indexes
+		
+Different Type of Databases
+	Relational Databases
+		SQL, Oracle, IBM, MySQL
+		Columns x Rows -> Relational
+		Set of Tables -> Schema
+		Set of Schemas -> Database
+	
+	Object Oriented Databases
+		Object Relational Mapping
+
+	NoSQL
+		Not Only SQL
+		Build bookshelves of elements
+			narrow down data by pointing to shelf
+			then identify words looking for
+		MongoDB
+		Used by Tech Giants
+	
+What is Relational Database
+	Most Widely Used
+	
+	Set of Tables linked in meaningful methods
+	Row - represents a single item (tuple or record)
+	Table - relation in which all rows share common attributes
+	Column - unique attribute name
+	
+	Axioms	
+		Each table has unique name
+		Each table contains multiple rows
+		Each row in table is unique111
+		Every table has a key to uniquely identify rows
+		Each column has unique attribute name
+	
+	Primary Key
+		Single unique attribute
+		ID number - SSN - email address
+					Composite Primary Keys
+		Foreign Keys
+			field whose values are the same as the primary key of
+			another table
+			Many-to-One
+		
+			

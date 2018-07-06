@@ -1,0 +1,57 @@
+Zane Reeder
+Database Design
+Design Phase 2 - Relationships
+7/6/2018
+
+Identifying vs Non-Identifying : Cardinality
+	Foreign Keys
+		Relationhsip is established between two database
+		tables when one table has a foreign key that
+		references the primary key of another table.
+	
+	Id Relationship
+		Exisitance of a row in a child table depends on a row
+		in a parent table.
+		Persons table and PhoneNumbers table
+	
+	Non-Id Relationship
+		Primary key of parent table is not a composite key of 
+		the child table.
+		Persons table and States table
+		
+	Degree of Relationship
+		Number of occurrences in one entity which are associated
+		to the number of occurrances in another.
+		There are three degrees of relationship
+			1:1 One to One
+			1:M	One to Many
+			M:N	Many to Many
+			
+			
+One to One Relationship
+	Only one record on each side of the relationhsip
+	Countries and Capital City
+	These relationships are rare and difficult to keep 1:1
+
+	Unique Constraints prevent errors changing the relationship
+	to a 1:M
+	
+
+One to Many Relationship
+	Single record in one table is related to multiple records in
+	another table
+
+	Brand -> Products
+	
+	
+Many to Many Relationship
+	Multiple records in one table related to multiple records
+	in another table.
+	
+	Products <-> Categories
+	
+
+Finalize Database Model
+	Orders == <3
+	1 : M with Customers Table
+	M : M with Items

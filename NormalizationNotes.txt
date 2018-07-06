@@ -1,0 +1,81 @@
+Zane Reeder
+Database Design
+Design Phase 1 - Normalization
+7/5/2018
+
+Conceptual Entities & Attributes
+
+Customers		
+	id
+	email
+	name
+	address
+	fav prods
+	
+Orders		
+	product
+	customer
+	warranty
+	purchase date
+	
+	
+Products
+	id
+	name
+	about
+	price
+	brand
+	brand desc
+	category
+
+	
+Normalization
+	Design Technique which organizes tables in a manner that reduces
+	redundancy and dependency of data
+	
+	Redundant Data == Useless Data == Same data stored in more than one place
+	
+	Without Normalizations it becomes difficult to handle and update
+		a database without handling data loss
+	
+	
+Normal Forms
+
+	First Normal Form
+		Property of a relation table in a relational database such
+		that if and only if the domain of each attribute contains
+		only atomic values and the calue of each attribute contains
+		only a single value from that domain
+		
+		Axioms
+			Each table cell should contain a single ("atomic") value.
+			Each record is unique
+	
+		Split columns to atomic values
+		If multiple values can be assigned to a record,
+			move them to a new table
+		
+	
+	Second Normal Form
+		First Normal Form and
+		No non-prime attribute is dependent on any proper subset
+		of any candidate key of the table. A non-prime attribute
+		of a table is an attribute that is not part of any
+		candidate key.
+		
+		Every non-key attribute of the table is dependent on the
+		whole composite primary key.
+		
+		
+	Third Normal Form
+		Second Normal Form and
+		Every non-prime attribute of R is non-transitively
+		dependent on every key of R
+		
+		Every non-prime attribute of the table must be
+		dependent on the primary key.
+		There should not be the case that a non-prime attribute
+		is determined by another non-prime attribute.
+		
+		transitive dependancy -
+			By A->B && B->C, then A->C
